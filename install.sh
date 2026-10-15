@@ -16,8 +16,7 @@ EOF
 sudo dnf install gnome-keyring-pam intune-portal
 
 # Enable user's gnome-keyring-daemon service
-# Start the service before reboot not work
-systemctl --user enable gnome-keyring-daemon
+systemctl --user enable gnome-keyring-daemon.socket
 
 # Reboot
 echo "Need a reboot!"
